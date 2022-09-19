@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/mostrar_todo','App\Http\Controllers\ctrl_repsiaf@mostrar_todo');
 Route::get('/totales','App\Http\Controllers\ctrl_repsiaf@totales');
 Route::get('/ejec_fuente','App\Http\Controllers\ctrl_repsiaf@ejec_fuente');
+Route::get('/ejec_generica','App\Http\Controllers\ctrl_repsiaf@ejec_generica');

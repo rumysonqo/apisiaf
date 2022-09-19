@@ -28,4 +28,13 @@ class ctrl_repsiaf extends Controller
         return $kits;
     }
 
+    public function ejec_generica(){
+        $kits=DB::table('repsiaf')
+                ->select(DB::raw('cod_generica, generica, sum(pia) as pia, sum(pim) as pim, sum(certificado) as certif, sum(devengado) as deven, (sum(devengado)/sum(pim))*100 as ejec'))
+                ->groupBy('cod_generica','generica')
+                ->orderBy('cod_generica')
+                ->get();
+        return $kits;
+    }
+
 }
