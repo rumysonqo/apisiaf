@@ -23,3 +23,7 @@ Route::get('/mostrar_todo','App\Http\Controllers\ctrl_repsiaf@mostrar_todo');
 Route::get('/totales','App\Http\Controllers\ctrl_repsiaf@totales');
 Route::get('/ejec_fuente','App\Http\Controllers\ctrl_repsiaf@ejec_fuente');
 Route::get('/ejec_generica','App\Http\Controllers\ctrl_repsiaf@ejec_generica');
+Route::get('/programas','App\Http\Controllers\ctrl_repsiaf@programas');
+Route::get('/totales_programa/{prg}','App\Http\Controllers\ctrl_repsiaf@totales_programa');
+Route::get('/ejec_fuente_programa/{prg}','App\Http\Controllers\ctrl_repsiaf@ejec_fuente_programa');
+Route::get('/ejec_generica_programa/{prg}','App\Http\Controllers\ctrl_repsiaf@ejec_generica_programa');
