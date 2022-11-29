@@ -31,3 +31,6 @@ Route::get('/ejec_meta/{prg}','App\Http\Controllers\ctrl_repsiaf@ejec_meta');
 Route::get('/genericas','App\Http\Controllers\ctrl_repsiaf@genericas');
 Route::get('/fuentes','App\Http\Controllers\ctrl_repsiaf@fuentes');
 Route::get('/ejec_meta_gen_fte/{prg}/{gen}/{fte}','App\Http\Controllers\ctrl_repsiaf@ejec_meta_gen_fte');
+Route::get('/ejec_fte_gen/{fte}','App\Http\Controllers\ctrl_repsiaf@ejec_fte_gen');
+Route::get('/ejec_prg_fte_gen/{prg}/{fte}','App\Http\Controllers\ctrl_repsiaf@ejec_prg_fte_gen');
+Route::get('/ejec_prg_gen_fte_espec/{prg}/{gen}/{fte}','App\Http\Controllers\ctrl_repsiaf@ejec_prg_gen_fte_espec');
